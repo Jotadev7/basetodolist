@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TodoItem } from './interfaces/todo-item';
 
 @Component({
   selector: 'app-root',
@@ -7,12 +8,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'basetodolist';
-  todoList = [
-    {title: 'Tarefa 1'},
-    {title: 'Tarefa 2'},
-    {title: 'Tarefa 3'},
-    {title: 'Tarefa 4'},
-    {title: 'Tarefa 5'},
-    {title: 'Tarefa 6'},
-  ]
 }
