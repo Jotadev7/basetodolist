@@ -3,16 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TodoItemComponent } from './todo-item/todo-item.component';
-import { ListManagerComponent } from './list-manager/list-manager.component';
-import { InputButtonUnitComponent } from './input-button-unit/input-button-unit.component';
+import { HomeComponent } from './navegacao/home/home.component';
+import { MenuComponent } from './navegacao/menu/menu.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodoItemComponent,
-    ListManagerComponent,
-    InputButtonUnitComponent
+    MenuComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
