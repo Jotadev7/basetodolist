@@ -1,35 +1,35 @@
 <div class="container main-container">
     <h4>Demo Cadastro</h4>
     <hr>
-    <form novalidate [formGroup]="cadastroForm">
+    <form novalidate (ngSubmit)="adicionarUsuario()" [formGroup]="cadastroForm">
 
         <div class="form-horizontal">
 
             <div class="form-group">
-                <label class="col-md-2 control-label" for="nome">Nome completo</label>
+                <label class="col-md-2 control-label" for="titulo">Título</label>
                 <div class="col-md-10">
-                    <input class="form-control" id="nome" type="text" placeholder="Nome (requerido)" formControlName="nome">
+                    <input class="form-control" id="titulo" type="text" placeholder="Título (requerido)" formControlName="titulo">
                 </div>
             </div>
 
             <div class="form-group">
-                <label class="col-md-2 control-label">CPF</label>
+                <label class="col-md-2 control-label">Descrição</label>
                 <div class="col-md-10">
-                    <input class="form-control" id="cpf" type="text" placeholder="CPF (requerido)">
+                    <input class="form-control" id="descricao" type="text" placeholder="Descrição (requerido)" formControlName="descricao">
                 </div>
             </div>
 
             <div class="form-group">
                 <label class="col-md-2 control-label">E-mail</label>
                 <div class="col-md-10">
-                    <input class="form-control" id="email" type="text" placeholder="E-mail (requerido)">
+                    <input class="form-control" id="email" type="text" placeholder="E-mail (requerido)" formControlName="email">
                 </div>
             </div>
 
             <div class="form-group">
                 <label class="col-md-2 control-label">Senha</label>
                 <div class="col-md-10">
-                    <input class="form-control" id="senha" type="password" placeholder="Senha (requerido)">
+                    <input class="form-control" id="senha" type="password" placeholder="Senha (requerido)" formControlName="senha">
                 </div>
             </div>
 
