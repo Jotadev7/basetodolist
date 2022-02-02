@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-cadastro',
@@ -8,7 +9,9 @@ export class CadastroComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    let nome = new FormControl('');
+    
   }
 
 }
