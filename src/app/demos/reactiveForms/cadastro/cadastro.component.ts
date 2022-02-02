@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-cadastro',
@@ -9,14 +9,14 @@ export class CadastroComponent implements OnInit {
 
   cadastroForm: FormGroup | any;
 
-  constructor() { }
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit(){
-    this.cadastroForm = new FormGroup({
-      titulo: new FormControl(''),
-      descricao: new FormControl(''),
-      email: new FormControl(''),
-      senha: new FormControl('')
+    this.cadastroForm = this.fb.group({
+      titulo: [''],
+      descricao: [''],
+      email: [''],
+      senha: ['']
     })
 
   }
