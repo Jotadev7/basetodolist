@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgBrazil } from 'ng-brazil';
+import { TextMaskModule } from 'angular2-text-mask';
+import { CustomFormsModule } from 'ng2-validation';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -23,6 +26,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    TextMaskModule,
+    NgBrazil,
+    CustomFormsModule,
     ReactiveFormsModule
   ],
   providers: [],
