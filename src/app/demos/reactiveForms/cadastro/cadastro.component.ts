@@ -8,7 +8,7 @@ import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-cadastro',
-  templateUrl: './cadastro.component.html'
+  templateUrl: './cadastro2.component.html'
 })
 export class CadastroComponent implements OnInit {
 
