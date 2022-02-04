@@ -4,6 +4,7 @@ import { Usuario } from './models/usuario';
 import { utilsBr } from 'js-brasil'
 import { NgBrazilValidators } from 'ng-brazil';
 import { CustomValidators } from 'ng2-validation';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-cadastro',
@@ -16,7 +17,8 @@ export class CadastroComponent implements OnInit {
   formResult: string = '';
   MASKS = utilsBr.MASKS;
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder,
+              private toastr: ToastrService) { }
 
   ngOnInit(){
     this.cadastroForm = this.fb.group({
@@ -34,6 +36,7 @@ export class CadastroComponent implements OnInit {
       this.usuario = Object.assign({}, this.usuario, this.cadastroForm.value)
       console.log(this.usuario);
       this.formResult = JSON.stringify(this.cadastroForm.value);
+      this.toastr.success('Adicionado com sucesso!');
     } else {
       this.formResult = "Não submeteu.";
     }
