@@ -36,7 +36,7 @@ export class CadastroComponent implements OnInit {
       this.usuario = Object.assign({}, this.usuario, this.cadastroForm.value)
       console.log(this.usuario);
       this.formResult = JSON.stringify(this.cadastroForm.value);
-      this.toastr.success('Adicionado com sucesso!');
+      this.toastr.success('Tarefa salva com sucesso!', 'Sucesso!', {positionClass: 'toast-top-center', timeOut: 5000});
     } else {
       this.formResult = "Não submeteu.";
     }
