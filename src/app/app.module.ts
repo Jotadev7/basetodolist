@@ -15,6 +15,7 @@ import { MenuComponent } from './navegacao/menu/menu.component';
 import { CadastroComponent } from './demos/reactiveForms/cadastro/cadastro.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
+import { CarroComponent } from './teste/carro/carro.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ToastrModule } from 'ngx-toastr';
     MenuComponent,
     HomeComponent,
     FooterComponent,
-    CadastroComponent
+    CadastroComponent,
+    CarroComponent
   ],
   imports: [
     BrowserModule,
