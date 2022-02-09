@@ -75,4 +75,43 @@
 
         </div>
     </form>
+
+    <div class="card">
+        <h5 class="card-header">Lista de Cadastros</h5>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-hover table-striped">
+              <thead style="text-align: center;">
+                <td></td>
+                <td>#</td>
+                <td>Título</td>
+                <td>Descrição</td>
+                <td>CPF</td>
+                <td>E-mail</td>
+                <td>Senha</td>
+                <td></td>
+              </thead>
+          
+              <tbody style="text-align: center;">
+                <tr *ngFor="let usu of usuario">
+                  <td>
+                    <button class="text-white btn btn-sm btn-secondary">Editar</button>
+                  </td>
+                  <td>{{usu.id}}</td>
+                  <td>{{usu.titulo | titlecase}}</td>
+                  <td>{{usu.descricao}}</td>
+                  <td>{{usu.cpf}}</td>
+                  <td>{{usu.email}}</td>
+                  <td>{{usu.senha}}</td>
+                  <td>
+                    <div class="btn-group">
+                      <button class="btn btn-sm btn-danger">Excluir</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
 </div>

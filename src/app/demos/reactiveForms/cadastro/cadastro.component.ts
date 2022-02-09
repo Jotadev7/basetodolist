@@ -5,10 +5,11 @@ import { utilsBr } from 'js-brasil'
 import { NgBrazilValidators } from 'ng-brazil';
 import { CustomValidators } from 'ng2-validation';
 import { ToastrService } from 'ngx-toastr';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-cadastro',
-  templateUrl: './cadastro2.component.html'
+  templateUrl: './cadastro.component.html'
 })
 export class CadastroComponent implements OnInit {
 
@@ -43,4 +44,5 @@ export class CadastroComponent implements OnInit {
 
   }
 
+ 
 }

@@ -23,6 +23,12 @@
       "color": "Branco",
       "price": 123123123,
       "id": 4
+    },
+    {
+      "model": "aaaaaaaa",
+      "color": "aaaaaaaaa",
+      "price": 1.231,
+      "id": 5
     }
   ]
 }
