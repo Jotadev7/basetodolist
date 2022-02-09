@@ -16,6 +16,7 @@ import { CadastroComponent } from './demos/reactiveForms/cadastro/cadastro.compo
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { CarroComponent } from './teste/carro/carro.component';
+import { OrderModule } from 'ngx-order-pipe';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { CarroComponent } from './teste/carro/carro.component';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    OrderModule,
     ToastrModule.forRoot()
   ],
   providers: [],

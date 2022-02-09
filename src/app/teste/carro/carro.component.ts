@@ -13,6 +13,14 @@ export class CarroComponent implements OnInit {
   car = {} as Car;
   cars: Car[] = [];
 
+  // Ordenação
+  key: string = 'id';
+  reverse: boolean = false;
+  sort(key: any) {
+    this.key = key;
+    this.reverse = !this.reverse;
+  }
+
   constructor(private carService: CarService) { }
 
   ngOnInit(): void {
