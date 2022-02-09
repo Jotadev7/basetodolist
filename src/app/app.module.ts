@@ -17,6 +17,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { CarroComponent } from './teste/carro/carro.component';
 import { OrderModule } from 'ngx-order-pipe';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import { OrderModule } from 'ngx-order-pipe';
     BrowserAnimationsModule,
     HttpClientModule,
     OrderModule,
+    Ng2SearchPipeModule,
     ToastrModule.forRoot()
   ],
   providers: [],

@@ -10,22 +10,21 @@
       <table class="table">
         <thead>
           <tr>
-            <th>#</th>
             <th (click)="sort('id')">
               ID
               <span *ngIf="key == 'id'">{{reverse ? '▲' : '▼'}}</span>
             </th>
-            <th (click)="sort('modelo')">
-              Modelo
-              <span *ngIf="key == 'modelo'">{{reverse ? '▲' : '▼'}}</span>
-            </th>
+            <th>Modelo</th>
             <th scope="col">Cor</th>
             <th scope="col">Preço</th>
             <th scope="col">Ações</th>
           </tr>
         </thead>
+        <nav class="navbar">
+          <input class="form-control" type="text" name="search"/>
+        </nav>
         <tbody>
-          <tr *ngFor="let car of cars | orderBy: key : reverse; let i = index">
+          <tr *ngFor="let car of cars | orderBy: key : reverse;">
             <td>{{car.id}}</td>
             <td>{{car.model}}</td>
             <td>{{car.color}}</td>
